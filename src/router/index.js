@@ -5,6 +5,7 @@ import Portfolio from '@/components/Portfolio'
 import Compras from '@/components/Compras'
 import Calculadora from '@/components/Calculadora'
 import Duelo from '@/components/Duelo'
+import Mozao from '@/components/Mozao'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/Duelo',
       name: 'Duelo',
       component: Duelo
+    },
+    {
+      path: '/Mozao',
+      name: 'Mozao',
+      component: Mozao
     }
   ]
 })
