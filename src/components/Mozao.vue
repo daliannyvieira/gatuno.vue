@@ -29,9 +29,8 @@
 				</button>
 			</div>
 		</div>
-		<button @click="validarMozao()">Mostrar ganhador</button>
-		<p> {{ganhador}} </p>
-
+		<button @click="validarMozao()">Mostrar resultado</button>
+		<p> {{resultado}} </p>
 	</section>
 </template>
 
@@ -41,7 +40,7 @@
 		data() {
 			return {
 				moral: 0,
-				ganhador: ''
+				resultado: ''
 			}
 		},
 		methods: {
@@ -53,11 +52,11 @@
 			},
 			validarMozao() {
 				if (this.moral > 4) {
-					return this.ganhador = 'Mozão memo'
+					return this.resultado = 'Mozão memo'
 				} if (this.moral > 2) {
-					return this.ganhador = 'Tem que melhorar'
+					return this.resultado = 'Tem que melhorar'
 				} else {
-					return this.ganhador = 'Vai perder para o amigo'
+					return this.resultado = 'Vai perder para o amigo'
 				}
 			}
 		}
