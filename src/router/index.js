@@ -4,6 +4,7 @@ import Hello from '@/components/Hello'
 import Portfolio from '@/components/Portfolio'
 import Compras from '@/components/Compras'
 import Calculadora from '@/components/Calculadora'
+import Duelo from '@/components/Duelo'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/Calculadora',
       name: 'Calculadora',
       component: Calculadora
+    },
+    {
+      path: '/Duelo',
+      name: 'Duelo',
+      component: Duelo
     }
   ]
 })

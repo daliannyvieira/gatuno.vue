@@ -15,7 +15,7 @@
 			<button v-on:click="removeClique()">
 				<span>-</span>
 			</button>
-			<button v-on:click="limparClique()">
+			<button v-on:click="limpaClique()">
 				<span>limpar carrinho</span>
 			</button>
 		</div>
@@ -47,14 +47,14 @@
 					   this.meme = 'bota a cara no sol mana';
 			},
 			contaClique() {
-				return this.clique++ 
+				return this.clique++
 			},
 			removeClique() {
 				if (this.clique > 0){
 					return this.clique--
 				}
 			},
-			limparClique() {
+			limpaClique() {
 				return this.clique = 0
 			}
 		}

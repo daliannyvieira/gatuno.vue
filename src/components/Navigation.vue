@@ -21,6 +21,11 @@
           <img src="../assets/calc.png">
         </router-link>
       </li>
+      <li>
+        <router-link to="/Duelo">
+          <img src="../assets/duelo.png">
+        </router-link>
+      </li>
     </ul>
   </nav>
 </template>
