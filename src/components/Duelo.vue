@@ -1,25 +1,10 @@
 <template>
 	<section>
-		<div>
-			<h2>Gato Branco</h2>
-			<p>{{ gatoBranco }}</p>
-			<div>
-				<button @click="addGatoBranco()">+</button>
-				<button @click="removeGatoBranco()">-</button>
-			</div>
-		</div>
-		<div>
-			<h2>Gato Preto</h2>
-			<p>{{ gatoPreto }}</p>
-			<div>
-				<button @click="addGatoPreto()">+</button>
-				<button @click="removeGatoPreto">-</button>
-			</div>
-		</div>
-
-		<button @click="mostraGanhador()">Mostrar ganhador</button>
-		<p> {{ganhador}} </p>
-
+		<label>Qual sua idade?</label>
+		<input v-model="idade" v-on:keyup.enter="podeVotar">
+		<button v-on:click="podeVotar">posso votar?</button>
+		<p v-if="idade != 0">Você tem {{idade}} anos. {{resposta}}</p>
+		<img :src="meme">
 	</section>
 </template>
 
@@ -28,44 +13,31 @@
 		name: 'Duelo',
 		data() {
 			return {
-				gatoBranco: 0,
-				gatoPreto: 0,
-				ganhador: ''
+				idade: 0,
+				resposta: '',
+				meme: ''
 			}
 		},
 		methods: {
-			addGatoBranco() {
-				if (this.gatoBranco < 10){
-					return this.gatoBranco++					
+			podeVotar(){
+				if(this.idade >= 18 && this.idade < 60){
+					return this.meme = '',
+						   this.resposta = 'Você é obrigado a votar'
+				} if(this.idade >= 16 && this.idade < 18) {
+					return this.meme = '',
+						   this.resposta = 'Você vota se você quiser'
+				} if(this.idade >= 60 && this.idade < 100){
+					return this.meme = '',
+						   this.resposta = 'Você vota se tu quiser'
+				} if(this.idade >= 100) {
+					return this.meme = 'http://www.3dejulhonoticias.com.br/wp-content/uploads/2013/10/idosa-de-111-anos-atribui-longevidade-a-bebida-e-cigarro.jpg',
+						   this.resposta = 'Você tem que tá em casa'
+				} if(this.idade < 16 && this.idade > 2){
+					return this.meme ='',
+						   this.resposta = 'Você não vota'
 				} else {
-					return this.gatoBranco = 0
-				}
-			},
-			removeGatoBranco() {
-				if (this.gatoBranco > 0){
-					return this.gatoBranco--					
-				}
-			},
-			addGatoPreto() {
-				if (this.gatoPreto < 10){
-					return this.gatoPreto++
-				} else {
-					return this.gatoPreto = 0
-				}
-			},
-			removeGatoPreto() {
-				if (this.gatoPreto > 0){
-					return this.gatoPreto--					
-				}
-			},
-			mostraGanhador() {
-				if (this.gatoPreto > this.gatoBranco) {
-					return this.ganhador = 'Gato Preto venceu'
-				} if(this.gatoPreto == this.gatoBranco) {
-					return this.ganhador = 'Empate!'
-				} else {
-					return this.ganhador = 'Gato Branco venceu'
-				}
+					return this.meme = 'http://s2.glbimg.com/kQa_k6LrTiKAl9mvsgnGfUfgdnGUsYurkLDaM7tDQ4VobLfVneBRSxIt72Hjx_NZ/e.glbimg.com/og/ed/f/original/2013/03/28/shutterstock_127815176.jpg',
+						   this.resposta = 'Você é um bb'				}
 			}
 		}
 	}
@@ -82,6 +54,13 @@
 	  height: 95vh;
 	  background-color: #333;
 	  color: #fff;
+	}
+
+	.time {
+		border: 1px solid #fff;
+		margin: 20px;
+		width: 400px;
+		height: 300px;
 	}
 
 	div {

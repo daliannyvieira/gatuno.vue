@@ -45,9 +45,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+  height: 3em;
   background-color: #fdfdfd;
+  background: #fdfdfd;
   color: #333;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;  
 }
 ul {
   display: flex;
