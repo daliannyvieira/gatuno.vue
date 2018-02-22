@@ -29,4 +29,8 @@ export default {
 img {
   max-width: 100%;
 }
+body {
+  padding: 0;
+  margin: 0;
+}
 </style>

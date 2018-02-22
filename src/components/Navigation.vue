@@ -3,27 +3,27 @@
     <ul>
       <li>
         <router-link to="/">
-          <img src="../assets/home.png">
+          <img src="../../static/imagens/home.png">
         </router-link>
       </li>
       <li>
         <router-link to="/Portfolio">
-          <img src="../assets/folder.png">
+          <img src="../../static/imagens/folder.png">
         </router-link>
       </li>
       <li>
         <router-link to="/Compras">
-          <img src="../assets/compras.png">
+          <img src="../../static/imagens/compras.png">
         </router-link>
       </li>
       <li>
         <router-link to="/Calculadora">
-          <img src="../assets/calc.png">
+          <img src="../../static/imagens/calc.png">
         </router-link>
       </li>
       <li>
         <router-link to="/Duelo">
-          <img src="../assets/duelo.png">
+          <img src="../../static/imagens/duelo.png">
         </router-link>
       </li>
     </ul>

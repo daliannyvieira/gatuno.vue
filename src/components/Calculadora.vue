@@ -44,13 +44,16 @@
 	section {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		height: 95vh;
 		background-color: #333;
 		color: #fff;
-		padding: 0.5em;
+		padding: 0;
+		margin: 0;
 	}
 	input {
-		width: 100%;
+		width: 50%;
 	}
 	h1 {
 		padding: 0 0.5em;

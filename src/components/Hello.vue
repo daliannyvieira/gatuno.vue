@@ -1,6 +1,6 @@
 <template>
   <section>
-    <img src="http://www.blogdogato.com.br/wp-content/uploads/como-evitar-arranhoes-do-seu-gato.jpg" alt="gato">
+    <img src='../../static/imagens/gato05.jpg'>
     <h1>{{ usuario }}</h1>
     <p>{{ sobre }}</p>
   </section>
@@ -29,6 +29,10 @@ section {
   height: 95vh;
   background-color: #333;
   color: #fff;
+}
+
+img {
+  width: 400px;
 }
 
 p {
