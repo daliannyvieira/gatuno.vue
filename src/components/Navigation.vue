@@ -7,7 +7,7 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/Portfolio">
+        <router-link to="/Gataria">
           <img src="../../static/imagens/folder.png">
         </router-link>
       </li>

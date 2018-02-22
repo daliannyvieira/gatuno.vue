@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
- 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+ 	  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   	border-radius: 2px;
   	width: 300px;
     padding: 0.25rem 1rem;

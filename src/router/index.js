@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import Portfolio from '@/components/Portfolio'
+import Gataria from '@/components/Gataria'
 import Compras from '@/components/Compras'
 import Calculadora from '@/components/Calculadora'
 import Duelo from '@/components/Duelo'
@@ -18,9 +18,9 @@ export default new Router({
       component: Hello
     },
     {
-      path: '/Portfolio',
-      name: 'Portfolio',
-      component: Portfolio
+      path: '/Gataria',
+      name: 'Gataria',
+      component: Gataria
     },
     {
       path: '/Compras',
